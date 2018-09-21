@@ -15,7 +15,7 @@ CMS端：https://github.com/baok1592/phps.shop-cms <br/>
 
 ## 小程序端的安装使用  
 1、将源码放入小程序工具<br/>
-2、修改utils/config.js中的api网址<br/>
+2、修改utils/config.js中的api网址;如 https://wx.phps.shop/v1/ <br/>
  
 
 ## 版权信息
