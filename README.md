@@ -7,9 +7,9 @@
 这是第一次用vue做项目，边学边做。代码很粗糙，后期会不断优化。<br/>
 做这个开源项目，纯粹是为了学习交流，很多不足的地方欢迎大家指教。<br/>  
 
-API端：https://github.com/baok1592/phps.shop-api
-小程序端：https://github.com/baok1592/phps.shop-program
-CMS端：https://github.com/baok1592/phps.shop-cms
+API端：https://github.com/baok1592/phps.shop-api <br/>  
+小程序端：https://github.com/baok1592/phps.shop-program <br/>  
+CMS端：https://github.com/baok1592/phps.shop-cms <br/>  
 微信网页端：https://github.com/baok1592/phps.shop-wxwap （完善中）
 
 
