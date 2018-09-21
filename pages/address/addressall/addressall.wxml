@@ -1,0 +1,42 @@
+<!--pages/address/addressall.wxml-->
+<view>
+  <form>
+    <block wx:for="{{AddressAllArr}}">
+    <radio-group>
+      <view class='H20'></view>    
+      <view class='addall'>
+        <view class='addall-01'>
+          <view class='fl'>{{item.name}}</view>
+          <view class='fr'>{{item.mobile}}</view>
+          <view class='clear'></view>
+        </view>
+        <view class='addall-02'>
+          <view class=''>{{item.province}}{{item.city}}{{item.country}}{{item.detail}}</view>          
+        </view>
+
+        <view class='addall-03'>
+          <view  class='addall-03-l fl'>
+            <view wx:if="{{item.select == 1}}">
+              <image class="sel_img" src="../../../imgs/diy/{{select_img}}"></image>
+              <text decode="true">&nbsp;默认地址</text>
+            </view> 
+            <view wx:else bindtap="setAddress" data-id="{{item.id}}">
+            <image class="sel_img" src="../../../imgs/diy/{{not_select_img}}"></image>
+              <text decode="true">&nbsp;设为默认</text>
+            </view>
+          </view>
+
+          <view  class='addall-03-r fr' data-id='{{item.id}}' bindtap='deletes'> 
+             <text>删除</text>
+          </view>
+          <view class='addall-03-r fr' data-id='{{item.id}}' bindtap='edit'><text>修改</text></view>
+          <view class='clear'></view>
+        </view>
+      </view>
+      </radio-group>
+    </block>
+    
+  </form>
+  <view class='H50'></view>
+  <view class='btn' bindtap="address"><button type="warn" > 新增 </button></view>
+</view>

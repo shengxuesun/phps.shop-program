@@ -1,0 +1,26 @@
+<view>
+  <view class='history'>
+   <block wx:for="{{historyp}}">
+    <view class='history-time'>6月20日</view>
+    <view class='coll-product' bindtap='detail' data-id='{{item.id}}'>
+        <view class='coll-product-l fl'><image src="../../../imgs/t{{item.img_url}}" /></view>
+        <view class='coll-product-r fr'>
+          <view class='coll-product-r-t'>{{item.name}}</view>
+          <view class='coll-product-r-m'>2人拼单·已拼1.3万件</view>
+          <view class='coll-product-r-d'> ¥ {{item.price}}</view>
+        </view>
+        <view class='clear'></view>
+    </view>
+    <view class='coll-product' bindtap='detail' data-id='{{item.id}}'>
+        <view class='coll-product-l fl'><image src="../../../imgs/t{{item.img_url}}" /></view>
+        <view class='coll-product-r fr'>
+          <view class='coll-product-r-t'>{{item.name}}</view>
+          <view class='coll-product-r-m'>2人拼单·已拼1.3万件</view>
+          <view class='coll-product-r-d'> ¥ {{item.price}}</view>
+        </view>
+        <view class='clear'></view>
+    </view>
+    <view class='H10'></view>
+    </block>
+  </view>
+</view>

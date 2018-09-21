@@ -1,0 +1,35 @@
+/* pages/order/index.wxss */
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both;}
+.H5{background-color: #f0f0f0;height: 5px;}
+.H10{background-color: #f0f0f0;height: 10px;}
+
+.or-s{height: 30px;line-height: 30px;padding: 5px 10px;}
+.s-n image{height: 20px;width: 20px;padding-right: 5px;line-height:25px;margin-top: 3px;}
+.s-n text{line-height: 10px;font-size: 14px;}
+.s-s{color: red;font-size: 12px;}
+.or-p{background-color: #f0f0f0;padding: 5px 10px;height:75px;overflow:hidden;font-size: 14px;}
+.p-01,.p-02,.p-03{display: inline-block}
+.p-01{width:20%;}
+.p-01 image{width: 60px;height: 60px;padding-right: 10px;overflow:hidden;}
+.p-02{width: 58%;height: 40px;line-height: 20px;padding-top: 8px}
+.p-02-2{height: 20px;line-height: 20px;overflow: hidden;}
+.p-02-1{color: #9d9d9d;height: 20px;line-height: 20px;overflow: hidden;}
+.p-03{width: 20%;line-height: 40px;text-align: right;}
+.or-pay{text-align: right;height: 40px;line-height: 40px;border-bottom: solid 1px #f0f0f0;font-size: 14px;}
+.or-pay text{font-size: 14px;}
+.or-btn{padding: 5px 10px;font-size: 14px}
+.or-btn2{border: solid 1px #f0f0f0;border-radius:8px;background-color: #e02e24;color: #fff;height: 28px;width: 70px;text-align: center;line-height: 28px;font-size: 12px;}
+.or-btn1{border: solid 1px #f0f0f0;border-radius:8px;height: 28px;width: 70px;text-align: center;line-height: 28px;margin-right: 10px;font-size: 12px;}
+
+.goods_sku{
+  padding:0px;
+  margin:0px;
+  height:20px;
+  color:#9d9d9d;
+}
+.white{
+  color:#444;
+}
+ 

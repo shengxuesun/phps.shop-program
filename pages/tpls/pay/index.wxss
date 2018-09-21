@@ -1,0 +1,18 @@
+/* pages/pay/index.wxss */
+.H10{background-color:#f0f0f0;height: 10rpx; }
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear:both;}
+
+.pay-p{position:fixed;bottom:0px;width:100%;background-color: #fff;} 
+.pay-time{height: 120rpx;line-height: 120rpx;text-align: center;border-bottom: 2rpx solid #f0f0f0;}
+.pay-time text{color: #ea0000;}
+.pay-time icon{text-align: right;float: right;padding-right: 20rpx;padding-top: 20rpx;}
+
+
+.pay-pay{line-height: 140rpx;margin-left: 20rpx;height: 140rpx}
+.pay-wei{padding-right: 20rpx;box-sizing: border-box}
+.pay-wei icon{padding-top: 15rpx;box-sizing: border-box;height: 60rpx;}
+.pay-pay image{height: 30rpx;width: 40rpx;padding-right: 15rpx;}
+.pay-t{line-height: 160rpx;text-align: center;color: #8e8e8e;font-size: 14px;}
+.pay-t text{color: #ea0000;}

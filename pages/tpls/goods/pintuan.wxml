@@ -1,0 +1,24 @@
+  <!--待拼团的团单-->
+<template name="pintuan">
+  <view class='nearbg-title'>
+    <view >以下小伙伴正在发起团购，可直接参与</view>
+  </view>
+  <block wx:for="{{CanTArr}}">
+    <view class='nearbg'>
+      <view class='fl'><image src="{{item.user_head_img}}" /></view>
+      <view class='nearbg-infor fl'>
+        <view>{{item.user_name}}</view>
+        <view>上海</view>
+      </view>
+      <view wx:if="{{guige}}" class='nearbg-canquan fr' bindtap="ct_order" 
+      data-id="{{item.goods_id}}" data-tid="{{item.id}}" > 去参团 ▶</view>
+      <!-- 下面是有规格的按钮 -->
+      <view wx:else class='nearbg-canquan fr' bindtap="ct_show" data-tid="{{item.id}}" > 去参团 ▶</view>
+      <view class='fr'>
+        <view>还差{{item.into_people}}人成团</view>
+        <view>时间</view>
+      </view>
+      <view class='clear'></view>
+    </view>
+  </block>
+</template>  

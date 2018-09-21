@@ -1,0 +1,15 @@
+/* pages/user/history.wxss */
+page{font-size: 28rpx;}
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both;}
+.H10{height: 20rpx;background-color: #f0f0f0;}
+
+.history-time{height: 80rpx;line-height: 80rpx;padding-left: 20rpx;border-bottom: solid 2rpx #f0f0f0;}
+.coll-product{padding: 20rpx;}
+.coll-product-l{width: 35%;}
+.coll-product-l image{height: 220rpx;width: 220rpx;}
+.coll-product-r{width: 65%;border-bottom: solid 4rpx #f0f0f0;height: 220rpx;}
+.coll-product-r-t{font-size: 28rpx;line-height: 30rpx;overflow: hidden;height: 60rpx;}
+.coll-product-r-m{color: #d0d0d0;font-size: 24rpx;line-height: 50rpx;margin-bottom: 50rpx;}
+.coll-product-r-d{color:#ea0000; line-height: 35rpx;}

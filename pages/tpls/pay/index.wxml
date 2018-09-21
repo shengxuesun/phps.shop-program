@@ -1,0 +1,23 @@
+<!--微信支付-->
+<template name="pay">
+  <view class='pay-p' hidden="{{flag2}}"> 
+      <view class='pay-time'>
+        请在<text> 29:56:5 </text>支付
+        <icon  bindtap="hide2" type="clear" />
+        <view class='clear'></view>
+      </view>
+     
+      <view class='pay-pay'>
+        <view class='pay-wei'>
+          <view class='fl'><image src="../../imgs/super_spike.png" />微信支付</view>
+          <view class='fr'><icon type="success_no_circle" color="#9f9f9f"/></view>
+          <view class='clear'></view>
+        </view>
+       
+      </view>
+      
+      <view class='pay-t'>拼团成功后还可获得<text>0元购物机会</text></view>
+      <button type="warn"  bindtap=""> 继续支付¥8.23 </button>
+    
+  </view>
+</template>

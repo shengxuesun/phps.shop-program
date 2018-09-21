@@ -1,0 +1,29 @@
+<!--商品列表-->
+<template name="homep">
+ <view>
+    <block wx:for="{{HomePArr}}">
+      <view class='coll-product'>
+      
+        <view class='coll-product-l fl' bindtap='detail' data-id='{{item.goods_id}}'>
+        <image src="{{item['imgs']['url']}}" /></view>
+        <view class='coll-product-r fr'>
+          <view class='coll-product-r-t'>{{item.goods_name}}</view>
+          <view class='coll-product-r-m'>{{item.description}}</view>
+          <view class='coll-product-r-m'>已拼1.3万件</view>
+          <view class='coll-product-r-d'>
+            <view class='coll-product-r-d-l fl'>
+              <view class='coll-product-r-d-l_01'>单独购买¥{{item.market_price}}</view>
+              <view class='coll-product-r-d-l_02'>2人团 ¥<text>{{item.price}}</text></view>
+            </view>
+            <view class='coll-product-r-d-r fr' bindtap='detail' data-id='{{item.goods_id}}'>去开团 ></view>
+            
+            <view class='clear'></view>
+          </view>
+          
+        </view>
+        <view class='clear'></view>
+      </view>
+      <view class='H10'></view>
+    </block>
+  </view>
+</template>

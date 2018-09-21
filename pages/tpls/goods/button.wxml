@@ -1,0 +1,22 @@
+<template name="button">
+<view class="detail-foot">
+    <view class='detail-foot-01' bindtap='home'><view class='detail-foot-02-01'><image src="../../imgs/home.png" /></view>首页</view>
+    
+    <view wx:if="{{Favgood}}" bindtap='deletesc' class='detail-foot-02'  ><view><image src="../../imgs/favorite1.png" /></view>已收藏</view>
+
+    <view wx:else bindtap='sc' class='detail-foot-02'  ><view><image src="../../imgs/favorite0.png" /></view>收藏</view>
+
+    <view wx:if="{{guige}}" data-type='only' class='detail-foot-03' bindtap='order' data-id='{{goods.goods_id}}'>
+      单独购买<view>{{goods.only_price}}</view>
+    </view>
+    <view wx:else  data-type='only'  class='detail-foot-03' bindtap='show' data-id='{{goods.goods_id}}'>
+      单独购买<view>{{goods.only_price}}</view>
+    </view>
+    <view wx:if="{{guige}}"  data-type='1' class='detail-foot-04' bindtap='order'  data-id='{{goods.goods_id}}'>
+      <view>{{goods.people}}人团</view> {{goods.price}}
+    </view> 
+    <view wx:else  data-type='1' class='detail-foot-04' bindtap='show'  data-id='{{goods.goods_id}}'>
+     <view>发起拼单</view> {{goods.price}}
+    </view> 
+  </view>
+</template>

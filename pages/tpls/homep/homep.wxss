@@ -1,0 +1,15 @@
+/* pages/homep/homep.wxss */
+
+
+.coll-product{padding: 25rpx 20rpx 15rpx;}
+.coll-product-l{width: 35%;}
+.coll-product-l image{height: 230rpx;width: 220rpx;}
+.coll-product-r{width: 65%;height: 240rpx;}
+.coll-product-r-t{font-size: 32rpx;line-height: 42rpx;overflow: hidden;height: 42rpx;}
+.coll-product-r-m{color: #adadad;font-size: 28rpx;line-height: 42rpx;height: 42rpx;overflow: hidden;}
+.coll-product-r-d{margin-top: 25rpx}
+.coll-product-r-d-l{color:#bebebe; line-height: 35rpx;font-size:28rpx;}
+.coll-product-r-d-l_02{font-size: 28rpx;line-height: 52rpx;color:#ea0000;}
+.coll-product-r-d-l_02 text{font-weight: bold;font-size: 36rpx;}
+.coll-product-r-d-m{height: 65rpx;line-height: 65rpx;padding-right: 20rpx;font-size: 32rpx;}
+.coll-product-r-d-r{color: #fff;background-color: #ea0000;height: 60rpx;line-height: 60rpx;padding: 0rpx 20rpx;border-radius: 12rpx;font-size: 28rpx;margin-top: 10rpx;}

@@ -1,0 +1,54 @@
+/* pages/address/index.wxss */
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both;}
+.H10{height: 10px;}
+
+
+.mui-title{background-color:#f0f0f0;border-bottom: 1px solid #ddd;height: 40px;line-height: 40px;text-align: center;}
+.add-address{padding: 50px 20px;}
+
+
+.btn{padding: 0px 10px;}
+.section input{border-bottom: 2rpx solid #ccc;height: 80rpx;}
+.pro-c-c{display: inline-block;width: 33%;}
+
+
+.container {
+  display: block;
+  background-color: #fafafa;
+  padding: 0;
+}
+
+.dialog-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+.picker-view {
+  width: 100%;
+  display: flex;
+  z-index:12;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  height: 40vh;
+}
+
+.picker-item {
+  line-height: 70rpx;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+  text-align: center;
+}
+

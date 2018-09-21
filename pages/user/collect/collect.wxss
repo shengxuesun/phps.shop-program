@@ -1,0 +1,77 @@
+/* pages/user/collect.wxss */
+
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+.navbar .item.active{
+  color: #e02e24;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #e02e24;
+}
+
+
+
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both;}
+.H10{height: 40rpx;background-color: #f0f0f0;}
+
+.coll-title{height: 80rpx;border-bottom: solid 2rpx #f0f0f0;margin-bottom: 20rpx;}
+.coll-title-p{width: 50%;display: inline-block;text-align: center;line-height: 80rpx;height: 80rpx;}
+.coll-title-p text{color: #e02e24;border-bottom: solid 4rpx #e02e24;padding-bottom: 18rpx;}
+.coll-title-s{width: 50%;display: inline-block;text-align: center;line-height: 80rpx;}
+.coll-product{padding: 20rpx;}
+.coll-product-l{width: 35%;}
+.coll-product-l image{height: 220rpx;width: 220rpx;}
+.coll-product-r{width: 65%;border-bottom: solid 4rpx #f0f0f0;height: 220rpx;}
+.coll-product-r-t{font-size: 28rpx;line-height: 30rpx;overflow: hidden;height: 70rpx;}
+.coll-product-r-m{color: #d0d0d0;font-size: 24rpx;line-height: 50rpx;margin-bottom: 30rpx;}
+.coll-product-r-d-l{color:#e02e24; line-height: 35rpx;}
+.coll-product-r-d-l text{font-size: 24rpx;line-height: 10rpx;}
+.coll-product-r-d-m{height: 60rpx;line-height: 60rpx;padding-right: 20rpx;font-size: 28rpx;}
+.coll-product-r-d-r{color: #fff;background-color: #e02e24;height: 60rpx;line-height: 60rpx;padding: 0rpx 20rpx;border-radius: 12rpx;font-size: 28rpx;}
+
+
+
+
+.coll-title1{height: 80rpx;border-bottom: solid 2rpx #f0f0f0;background-color: #fff;}
+.coll-title-p1{width: 50%;display: inline-block;text-align: center;line-height: 80rpx;height: 80rpx;}
+.coll-title-p1 text{color: #e02e24;border-bottom: solid 4rpx #e02e24;padding-bottom: 18rpx;}
+.coll-title-s1{width: 50%;display: inline-block;text-align: center;line-height: 80rpx;}
+.coll-shop1{padding: 20rpx;background-color: #fff;}
+.coll-shop-i1 image{height: 120rpx;width: 120rpx;border: solid 2rpx #f0f0f0;}
+.coll-shop-n1{padding-left: 20rpx;}
+.coll-shop-n-n1{font-size: 36rpx;line-height: 70rpx;height: 70rpx;}
+.coll-shop-n-s1{font-size: 24rpx;line-height: 40rpx;}
+.coll-shop-m1{padding-top: 20rpx;font-size: 28rpx;line-height: 70rpx;}
+.coll-shop-t1{color: #fff;background-color: #e02e24;height: 70rpx;line-height: 70rpx;padding: 0rpx 20rpx;border-radius: 12rpx;font-size: 28rpx;margin-left: 20rpx;margin-top: 20rpx;}
+.coll-produ1{background-color: #fff;}
+.coll-pro1{padding: 5rpx 10rpx 20rpx 20rpx; width: 28%;display: inline-block;}
+.coll-pro-img1 image{height: 220rpx; width: 220rpx;}
+.coll-pro-name1{color:#e02e24;text-align: center; }
+.coll-pro-name1 text{border: solid 2rpx #e02e24;font-size: 24rpx;}
+.foot{font-size: 28rpx;color: #adadad;text-align: center;padding-top: 50rpx;}
+.H20{
+  height:20px;
+}

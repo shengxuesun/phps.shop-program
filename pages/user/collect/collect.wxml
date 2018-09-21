@@ -1,0 +1,78 @@
+<!--pages/user/collect.wxml-->
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+ 
+<!--商品-->
+  <view class="H20"></view>
+<view hidden="{{currentTab!==0}}">
+  <view>  
+      <block wx:for="{{CollectArr.goods}}">
+        <view class='coll-product' bindtap='detail' data-id='{{item.product.goods_id}}'>
+          <view class='coll-product-l fl'><image src="{{item.favimg.url}}" /></view>
+          <view class='coll-product-r fr'>
+            <view class='coll-product-r-t'>{{item.product.goods_name}}</view>
+            <view class='coll-product-r-m'>2人拼单·已拼1.3万件</view>
+            <view class='coll-product-r-d'>
+              <view class='coll-product-r-d-l fl'>
+                ¥ {{item.product.price}}
+                <!-- <view><text>比收藏时降2元</text></view> -->
+              </view>
+              <view class='coll-product-r-d-r fr' >去开团</view>
+              
+              <view class='clear'></view>
+            </view> 
+          </view>
+          <view class='clear'></view>
+        </view>
+      </block>
+    </view>
+</view>
+ 
+<!--店铺-->
+<view hidden="{{currentTab!==1}}">
+  <view>
+      <block wx:for="{{CollectArr.shop}}">
+        <view class='coll-shop1'  bindtap='seller' data-id='{{item.shopinfo.shop_id}}'>
+          <view class='coll-shop-i1 fl'><image src="{{item.favimg.url}}" /></view>
+          <view class='coll-shop-n1 fl'>
+            <view class='coll-shop-n-n1'>{{item.shopinfo.shop_name}}</view>
+            <view class='coll-shop-n-s1'>总销量：{{item.shopinfo.shop_sales}}万</view>
+          </view>
+          <view class='coll-shop-t1 fr'>进入店铺</view>
+          
+          <view class='clear'></view>
+        </view>
+        <view class='coll-produ1'>
+          <view class='coll-pro1'  bindtap='detail' data-id='{{item.id}}'>
+            <view class='coll-pro-img1'><image src="../../../imgs/t2.jpg" /></view>
+            <view class='coll-pro-name1'>
+              <text>新 品</text> ¥ 4.7
+            </view>
+          </view>
+          <view class='coll-pro1'>
+            <view class='coll-pro-img1'><image src="../../../imgs/t2.jpg" /></view>
+            <view class='coll-pro-name1'>
+              <text>新 品</text>¥4.7
+            </view>
+          </view>
+          <view class='coll-pro1'>
+            <view class='coll-pro-img1'><image src="../../../imgs/t2.jpg" /></view>
+            <view class='coll-pro-name1'>
+              <text>新 品</text>¥4.7
+            </view>
+          </view>
+        </view>
+        <view class='H10'></view>
+      </block>
+    </view>
+</view>
+
+
+
+
+
+ 
+  
+

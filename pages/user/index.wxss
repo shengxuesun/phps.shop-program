@@ -1,0 +1,38 @@
+/* pages/user/index.wxss */
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both;}
+
+page{background: #F0F0F0}
+#my{background: #fff}
+.member{background-color: #e02e24;height: 100px;display: flex;color:#fff;padding: 30px 0px 0px 20px;line-height: 40px;}
+.head-img open-data{height: 10px;width: 80px;margin-right: 5px;border-radius: 30px;
+  -webkit-border-radius:30px;
+  -moz-border-radius: 30px;}
+.memtit{width: 100%; padding: 5px 10px;box-sizing: border-box;height: 40px;line-height: 30px;border-bottom: 1px solid #ddd;font-size: 32rpx}
+.member-list{width: 100%;text-align: center;height: 65px;}
+.list1{width: 25%;float: left;font-size: 12px;color:#9d9d9d;box-sizing: border-box;padding:10px;}
+.list1 image{ width: 25px;height: 25px;}
+.H10{height: 6px;background-color:#f0f0f0; }
+.mem-menu{width: 100%;text-align: center;height: 80px;}
+.menu1{width: 33%;float: left;font-size: 12px;color:#9d9d9d;box-sizing: border-box;padding:10px 5px;}
+.menu1 image{width: 30px;height: 30px;}
+.item-s{height: 40px;line-height: 40px;border-bottom: 1px solid #ddd;margin: 0px 10px;font-size: 32rpx}
+.item-s image{height: 18px;width: 13px;padding-right: 5px;}
+.member-infor{font-size: 38rpx;padding-left: 20rpx;width: 100%;padding-right: 30rpx;}
+.member-infor button{margin:30rpx 0rpx 0rpx 0rpx;width: 150rpx;height: 60rpx;font-size: 24rpx;padding-left: 0rpx;padding-right: 0rpx;}
+.member-infor-u{font-size: 28rpx;line-height: 20rpx;}
+.member-infor-m{font-size: 28rpx;}
+
+ 
+.userinfo-avatar {
+  overflow:hidden;
+  display: block;
+  width: 200rpx;
+  height: 150rpx; 
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+ 
+ 

@@ -1,0 +1,33 @@
+	<import src="../tpls/homep/homep.wxml"/>
+  
+  <!--头部导航-->
+	<view class="top-news">  
+      <view class="nav-scroll">
+        <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+            <text class='home' bindtap='home'>首页</text>
+            <text wx:for="{{CategoryArr}}" wx:key="id"  data-id="{{item.category_id}}" bindtap='category'  class="nav-name {{item.id == currentId ? 'nav-hover' : ''}}">{{item.short_name}}</text>
+        </scroll-view>
+      </view>
+  </view>
+<view wx:if="{{!is_hidden}}"> 
+   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{CategoryMArr.banner}}">
+      <swiper-item>
+        <image src="{{item.imgs}}" class="slide-image" style="width:100%;"/> 
+      </swiper-item>
+    </block>
+  </swiper>
+ <!--子菜单导航--> 
+	<view class="nav">
+    <block wx:for="{{CategoryMArr.category}}">
+      <view class='nav-li' data-id="{{item.category_id}}" bindtap='category_into'> 
+        <view  >
+          <image src="{{item.imgs}}" />
+          <view>{{item.category_name}}</view>
+        </view>
+      </view> 
+    </block>	
+    <view class='clear'></view>
+	</view>  
+</view>
+  <template is="homep" data="{{HomePArr}}"/>

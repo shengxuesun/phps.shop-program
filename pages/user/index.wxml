@@ -1,0 +1,62 @@
+<view id="my"> 
+    <view class="member">    	 
+        <view class="userinfo-avatar">        
+          <open-data  type="userAvatarUrl"></open-data>
+        </view>
+
+    	<view class="member-infor"> 
+          <view class='fl'>        
+            <view wx:if="{{user_name}}">
+              <open-data type="userNickName"></open-data>
+              <view class='member-infor-u'>普通会员</view>
+            </view>            
+            <button wx:else open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+          </view>
+
+          <!-- <view class='fr member-infor-m' bindtap='mobile'>绑定手机</view>  -->
+          <view class='clear'></view> 
+      </view> 
+    </view> 
+    <view class="memtit" >
+       <view class='fl'>我的订单</view>
+       <view class='fr'></view>
+       <view class='clear'></view>
+    </view>
+    <view class="member-list">
+    	<view class='list1'bindtap="myorder" >    		
+    			<image src="../../imgs/0.png" />
+    			<view>全部 </view>     		
+    	</view> 
+      <view class='list1' >    		
+    			<image src="../../imgs/2.png" />
+    			<view>待付款 </view>     		
+    	</view>  
+      <view class='list1' >    		
+    			<image src="../../imgs/4.png" />
+    			<view>待发货 </view>     		
+    	</view> 
+      <view class='list1' >    		
+    			<image src="../../imgs/5.png" />
+    			<view>待评价 </view>     		
+    	</view> 
+    	
+    </view>
+    <view class='H10'></view>
+    <view class="mem-menu">
+    	<view class='menu1' bindtap='collect'>
+    		
+    			<image src="../../imgs/6.png" />
+    			<view>我的收藏 </view>
+    	
+    	</view> 
+      <view class='menu1' bindtap="address">    		
+    			<image src="../../imgs/7.png" />
+    			<view>我的地址 </view>    	
+    	</view>   
+      <view class='menu1' bindtap='set'> 
+    			<image src="../../imgs/9.png" />
+    			<view>关于 </view> 
+    	</view>   	 
+    	<view class='clear'></view>
+    </view> 
+</view>

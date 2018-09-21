@@ -1,0 +1,43 @@
+	<import src="../tpls/homep/homep.wxml"/> 
+  
+  <view class="top-news">  
+      <view class="nav-scroll">
+        <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+            <text class='home' bindtap='home'>首页</text>
+            <text wx:for="{{CategoryArr}}" wx:key="id" data-id="{{item.category_id}}" bindtap='category'  class="nav-name {{item.id == currentId ? 'nav-hover' : ''}}">{{item.short_name}}</text>
+        </scroll-view>
+      </view>
+  </view>
+	
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{bannerArr.items}}">
+      <swiper-item>  
+        <image src="{{item['imgs']}}" class="slide-image" style="width:100%;height:360rpx" /> 
+      </swiper-item>
+    </block>
+  </swiper>
+  
+	<!--入口导航-->
+	<view class="nav">
+    <block wx:for="{{CategoryArr}}">
+      <view class='nav-li'> 
+        <view bindtap='category' data-id="{{item.category_id}}" >
+          <view class="img"><image src="{{item.imgs}}" /> </view>
+          <view>{{item.short_name}}</view>
+        </view>
+      </view> 
+    </block>
+		
+    <view class='clear'></view>
+	</view> 
+	<!-- 提示消息
+	<view class="message">
+		<view  >
+			<view class="message-img fl"><image src="../../imgs/t2.jpg" /></view>
+			<view class="message-text fr">北京的江南风格 1秒前开团了 ></view>
+		</view>
+	</view> 
+   -->
+   	<!--开团列表    -->
+     
+  <template is="homep" data="{{HomePArr}}"/>

@@ -1,0 +1,75 @@
+/* pages/order/index.wxss */
+@import "../tpls/pay/index.wxss";
+
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both;}
+.H10{height: 6px;background-color:#f0f0f0; }
+page{background-color:#f0f0f0;}
+
+.addressbox1{position:relative; height: 50px;line-height: 26rpx;padding:8px 10px 0;border-bottom: 1px solid #ddd; background-color: #fff;}
+.addressbox{height: 40px;line-height: 40px;padding: 0px 10px;border-bottom: 1px solid #ddd; background-color: #fff;text-align:center;width: 100%;}
+.right_ico{
+  position: absolute;right:10px;top:20px;
+}
+.name{height: 35px;line-height: 35px;padding-left: 10px;font-size: 16px;background-color: #fff;}
+.s-n image{height: 20px;width: 20px;padding-right: 5px;line-height:25px;margin-top: 8px;}
+.s-n text{line-height: 10px;font-size: 14px;}
+.list-product{padding: 10px 10px 5px;}
+.list-img image{height: 110px;width:100px;}
+.list-text{width: 65%;}
+.text-n{overflow: hidden;height: 40px;padding-top: 5px;font-size: 14px;line-height: 20px}
+.text-s{color: #8e8e8e;padding-top: 15px;line-height: 15px; }
+.text-a{padding-top: 5px;}
+.num{height: 40px;line-height: 40px;padding: 0px 10px;background-color: #fff;}
+.pay{height: 40px;line-height: 40px;background-color: #fff;padding: 0px 10px;font-size: 16px;}
+.weixin image{height: 15px;width: 15px;padding-right: 5px;}
+.weixin text{color: red; border:solid 1px red;border-radius:8px;padding:2px 5px;font-size: 12px;}
+.paymoney{background-color: #fff;height: 40px;line-height: 40px;position: fixed;
+  right: 0px;
+  bottom: 0px; width: 100%;}
+.money .total{color: red;font-size: 14px}
+.pay-btn{color: #fff;background-color: #e02e24;width: 100px;text-align: center;margin-left: 10px;}
+
+/*主容器*/
+.stepper {
+ 
+	width: 80px;
+	height: 26px;
+	/*给主容器设一个边框*/
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin:0 auto;
+   margin-top: 13rpx;
+}
+ 
+/*加号和减号*/
+.stepper text {
+	width: 19px;
+	line-height: 26px;
+	text-align: center;
+	float: left;
+}
+ 
+/*数值*/
+.stepper input {
+	width: 40px;
+	height: 26px;
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 12px;
+	/*给中间的input设置左右边框即可*/
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+ 
+/*普通样式*/
+.stepper .normal{
+	color: black;
+}
+ 
+/*禁用样式*/
+.stepper .disabled{
+	color: #ccc;
+}

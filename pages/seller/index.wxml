@@ -1,0 +1,42 @@
+<!--pages/seller/index.wxml-->
+<view class='page'>
+<view class='seller'>
+  <view class="imageC image_1X1"><image src="{{bannerArr['imgs']['url']}}"/></view>
+  <view class="textC hL text_51X1"><text class="text-content">{{bannerArr.shop_description}}</text></view>
+  <view class="textC text_52X1"><text class="text-content">{{bannerArr.shop_name}}</text></view>
+  <view class="textC hL text_53X1"><text class="text-content">销量：{{bannerArr.shop_sales}}</text></view>
+  <view class="textC text_54X1" wx:if="{{Favorite}}"  bindtap='deletesc'><text class="text-content" data-id='{{bannerArr.category_id}}'>已收藏</text></view>
+  <view class="textC text_54X1" wx:else bindtap='sc' >
+  <text class="text-content" data-id='{{bannerArr.category_id}}'>+收藏</text></view>
+  
+  
+
+  <view class="textC text_79X1"><text class="text-content">全部商品（{{shopnum}}）</text></view>
+
+ 
+</view>
+  
+</view>  
+<view style="margin-top:190px;">
+  <view class='mui-content'>   
+      <view class='mui-row'>
+       <block wx:for="{{shoppArr}}">
+        <view class='row_a'>  
+            <view class='row-1' bindtap='detail' data-id='{{item.goods_id}}'>
+            <image src="{{item['imgs']['url']}}" />
+            <view class='row-title'>{{item.goods_name}}</view>
+            <view>
+              <view class='row-1-3 fl'><text>¥{{item.price}}</text> </view>
+              <view class='row-1-4 fr'>参团 ></view>
+              <view class='clear'></view>
+            </view>
+            
+            </view>   
+        </view> 
+        
+        </block>
+      </view>
+  </view>
+</view>
+
+

@@ -1,0 +1,13 @@
+/* pages/detail/service.wxss */
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear:both;}
+
+
+.service{position:fixed;bottom: 0rpx;background-color: #fff;width: 100%;}
+.service-title{height: 90rpx;line-height: 90rpx;text-align: center;border-bottom: solid 2rpx #f0f0f0;}
+.service-title icon{text-align: right;float: right;padding-right: 20rpx;padding-top: 20rpx;}
+.service-mess{padding: 50rpx 40rpx;}
+.service-mess-a{display: inline-block;line-height: 65rpx;float: left;}
+.service-mess-b{display: inline-block;padding-left: 40rpx;float: left;}
+.mess-b-d{color: #adadad;font-size: 24rpx;padding-bottom: 50rpx;}

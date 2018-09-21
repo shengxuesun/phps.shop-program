@@ -1,0 +1,6 @@
+<!--pages/user/setnews.wxml-->
+<view class='newlist'>
+  <view class='title'>{{UserSetArr.title}}</view>
+  <view class='time'>{{UserSetArr.create_time}}</view>
+  <view>{{UserSetArr.content}}</view>
+</view>

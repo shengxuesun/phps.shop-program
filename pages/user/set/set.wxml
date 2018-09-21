@@ -1,0 +1,20 @@
+<!--pages/user/set.wxml-->
+<view class='set'>
+  <view class='H10'></view>
+  <block wx:for="{{UserSetArr}}">
+    <view class='set-a'bindtap='newlist' data-id='{{item.id}}'>
+      <view class='set-a-l fl'   ><image src="../../../imgs/article.png" />{{item.title}}</view>
+      <view class='fr'>></view>
+      <view class='clear'></view>
+    </view>
+  </block>
+  
+  <!--
+  <view class='H10'></view>
+  <view class='set-a'>
+    <view class='set-a-l fl'><image src="../../imgs/super_spike.png" />商家免费入住</view>
+    <view class='fr'>></view>
+    <view class='clear'></view>
+  </view>
+  -->
+</view>

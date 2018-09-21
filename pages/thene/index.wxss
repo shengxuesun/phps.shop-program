@@ -1,0 +1,23 @@
+/* pages/thene/index.wxss */
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both;}
+
+.na{padding-top: 15px;width: 100%;}
+.na-wrapper{width: 50%;text-align: center;}
+.na-name{font-size: 19px;}
+.na-name image{height: 17px;width: 17px;}
+.na-tip{color:#8e8e8e;line-height: 10px;padding-bottom: 10px}
+.na-avatar image{width: 30px;height: 30px;border-radius: 18px;
+  -webkit-border-radius:18px;
+  -moz-border-radius: 18px;}
+.newtitle{width: 100%;text-align: center;padding-top: 10px;}
+.newtitle-t{color: red;font-size: 18px;padding-top: 10px}
+.newtitle-p{color:#8e8e8e;line-height: 10px;padding-top: 10px}
+.mui-content{width: 100%;margin-top: 15px;}
+.mui-row{padding: 0px 10px;}
+.row{width: 50%;padding: 20px 10px;box-sizing: border-box;display:inline-block;}
+.mui-row image{height: 130px;width: 98%;}
+.row-title{overflow: hidden;height: 40px;line-height: 20px; font-size: 14px;}
+.row-1-3{color: #8e8e8e; font-size: 14px;}
+.row-1-3 text{color: red;font-size: 18px; }

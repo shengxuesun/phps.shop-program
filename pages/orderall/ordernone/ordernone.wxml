@@ -1,0 +1,23 @@
+<view class=''>
+  <view class='or-search'>
+    <input placeholder="搜索订单" focus="{{focus}}" />
+  </view>
+  <view class='or-fy'>
+    <view class='fy'><text>全部</text></view>
+    <view class='fy' >待付款</view>
+    <view class='fy'>待分享</view>
+    <view class='fy'>待发货</view>
+    <view class='fy'>待评价</view>
+    <view class='clear'></view>
+  </view>
+  <view class='ordernone'>
+    <view class='ordernone-a'><image src="../../../imgs/super_spike.png" />找不到订单</view>
+    <view class='ordernone-b'>
+      <image src="../../../imgs/super_spike.png" />
+      <view>您还没有相关的订单</view>
+      <view><text>去看看大家都买什么了吧</text></view>
+    </view>
+  </view>
+</view>
+
+ 

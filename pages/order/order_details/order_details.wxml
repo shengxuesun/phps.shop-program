@@ -1,0 +1,66 @@
+
+<view class="col_head">
+    <view class="col_head_01" >
+        <text wx:if="{{OrderDetails.pay_status == 0}}">待支付</text>
+       <text wx:if="{{OrderDetails.pay_status > 0}}">已支付</text>
+    </view>
+</view>
+<view class="myo_address">
+    <view class='myo_address_l'><image src="../../../imgs/position.png"></image></view>
+    <view class="myo_address_r">
+       <view class='myo_address_r_t'>{{OrderDetails.user_name}}<text>{{OrderDetails.receiver_mobile}}</text></view>
+       <view class='myo_address_r_m'>{{OrderDetails.receiver_province}}{{OrderDetails.receiver_city}}{{OrderDetails.receiver_district}}{{OrderDetails.receiver_address}}</view>
+    </view>
+</view>
+<view style="height: 10px;background-color: #F5F5F5;"></view>
+<view class='or-lis'>
+    <view class='or-s'>
+      <view class='s-n fl' bindtap='seller' data-cid='{{item.item.shop_id}}'>          
+          <image src="../../../imgs/shop.png"  />
+      </view>  
+      <view class='s-n fl' bindtap='seller' data-cid='{{item.item.shop_id}}'>          
+        <!-- <text>{{OrderDetails.item['shop_name']}}</text> -->
+         <text>官方店铺</text>
+      </view> 
+      <view class='s-s fr'>
+       <text wx:if="{{OrderDetails.pay_status == 0}}">待支付</text>
+       <text wx:if="{{OrderDetails.pay_status > 0}}" class="white">已支付</text>
+      </view>
+      <view class='clear'></view>
+    </view>
+
+      <view class='or-p' bindtap='detail' data-id='{{OrderDetails.goods_id}}'>
+        <view class='p-01'><image src="{{OrderDetails.imgs}}" /></view>
+        <view class='p-02'>
+          <view class='p-02-2'>{{OrderDetails.goods_name}}</view>
+          <view class="goods_sku">规格：{{OrderDetails.sku_name}}</view>
+          <view class='p-02-1'>单价：{{OrderDetails.price}}</view>
+        </view>
+        <view class='p-03'>
+          {{OrderDetails.item.item_people}}人团
+          <view class='p-02-1'>×{{OrderDetails.num}}</view>
+        </view> 
+      </view>
+
+     <view class='or-pay'>运费:{{OrderDetails.shipping_money}}
+        <text decode='true'>&emsp;实付：¥{{OrderDetails.order_money}}&emsp;</text>
+      </view>
+  
+    <view class='H5'></view>
+  </view>
+<view class="H10"></view>
+<view class="myo_message">
+    <view>订单编号：{{OrderDetails.order_num}}</view>
+    <view wx:if="{{OrderDetails.order_num}}=='wx'">支付方式：微信</view>
+    <view wx:else>支付方式：其它</view>
+    <view>送货方式：</view>
+    <view>下单时间：{{OrderDetails.create_time}}</view>
+    <view>成团时间：</view>
+    <view>到店核验时间：</view>
+    <view>订单状态：</view>    
+</view>
+<view class='or-btn'>
+  <view class="or-btn2 fr" bindtap='order' wx:if="{{OrderDetails.pay_status == 0}}">去支付</view>
+  <view class="or-btn1 fr" bindtap='del_order' wx:if="{{OrderDetails.pay_status == 0}}">取消订单</view>
+  <view class='clear'></view>
+</view>

@@ -1,0 +1,10 @@
+/* pages/user/set.wxss */
+page{background-color: #f0f0f0;}
+.H10{height: 20rpx;}
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both;}
+
+
+.set-a{padding: 0rpx 20rpx;height: 90rpx;line-height: 90rpx;border-bottom: solid 2rpx #f0f0f0;background-color: #fff;color: #6c6c6c}
+.set-a-l image{height: 30rpx; width: 30rpx;padding-right: 20rpx;}

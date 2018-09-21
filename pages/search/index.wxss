@@ -1,0 +1,55 @@
+/* pages/search/index.wxss */
+@import "../tpls/homep/homep.wxss";
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both;}
+.H10{height: 8px;background-color: #f0f0f0;}
+
+.H40{height: 30px}
+.top{
+  Background: #F8F8F8; 
+  width:100%;
+  height: 80rpx;
+  text-align: center;
+  padding-top:10rpx;
+}
+.search{
+  width:90%;  
+  margin:0 auto;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size:24rpx;  
+  border-radius:20px;
+  background-color: #fff;  
+}
+.search image{
+  height:35rpx;
+  width:40rpx;    
+  vertical-align: middle;
+  margin-right: 10rpx;
+  position: absolute;
+  left:200rpx;
+  top:25rpx;
+} 
+.search input{
+  display: inline-block;
+  height: 60rpx;
+  font-size: 32rpx;
+  line-height: 60rpx;  
+  padding-left:70rpx; 
+  width: 80%; 
+}
+
+.sear_history{color: #9d9d9d;font-size: 28rpx;padding: 10rpx 10rpx 0rpx 20rpx;}
+
+
+.newtitle{width: 100%;text-align: center;padding-top: 10px;}
+.newtitle-t{color: red;font-size: 18px;}
+.newtitle-p{color:#8e8e8e;line-height: 10px;}
+.mui-content{width: 100%;margin-top: 15px;}
+.mui-row{padding: 0px 10px;}
+.row{width: 50%;padding: 20px 10px;box-sizing: border-box;display:inline-block;}
+.mui-row image{height: 130px;width: 98%;}
+.row-title{overflow: hidden;height: 40px;line-height: 20px; font-size: 14px;}
+.row-1-3{color: #8e8e8e; font-size: 14px;}
+.row-1-3 text{color: red;font-size: 18px; }

@@ -1,0 +1,62 @@
+<import src="../tpls/order/index.wxml"/>
+
+<view class=''>
+ <!-- 
+  <view class='or-search'>
+    <input placeholder="搜索订单" focus="{{focus}}" />
+  </view>
+ -->
+  <view class="top" >
+    <view class="search" >
+    <image src="../../imgs/diy/search.png"  />
+    <input  bindblur="blur" type='text' name='search'  placeholder="搜索" value=""  />
+    </view> 
+  </view>
+  
+  <view class="navbar">
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+  </view>
+  
+<view wx:if="{{OrderAll != ''}}">
+
+  <!--全部-->
+  <view hidden="{{currentTab!==0}}">  
+    <block wx:for="{{OrderAll}}">
+      <template is="order" data="{{item}}"/>
+    </block>  
+  </view>
+  
+  <!--待付款-->
+  <view hidden="{{currentTab!==1}}">
+    <block wx:for="{{OrderAll}}">
+      <template is="order" wx:if="{{item.pay_status == 0}}" data="{{item}}"/>
+    </block> 
+  </view> 
+  <!--待发货-->
+  <view hidden="{{currentTab!==2}}">
+     <block wx:for="{{OrderAll}}">
+      <template is="order" wx:if="{{item.pay_status == 1 && item.drive_status == 0 }}" data="{{item}}"/>
+    </block> 
+  </view>
+   <!--待评价-->
+  <view hidden="{{currentTab!==3}}">
+     <block wx:for="{{OrderAll}}">
+      <template is="order" 
+      wx:if="{{item.pay_status == 1 && item.drive_status == 1 && item.evaluate_status == 0 }}" data="{{item}}"/>
+    </block> 
+  </view>
+</view>
+<view wx:else>   
+  <view>
+    <view class='ordernone'>
+    <view class='ordernone-a'></view>
+    <view class='ordernone-b'>
+      <image src="../../../imgs/super_spike.png" />
+      <view>您还没有相关的订单</view>
+      <view class='ordernone-b-b' bindtap='home'>去首页逛逛吧！</view>
+    </view>
+    </view>
+  </view>  
+</view>
+
+</view>

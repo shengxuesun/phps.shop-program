@@ -1,0 +1,54 @@
+page {
+  background-color: #fff;
+  height: 100%;
+  font-size: 28rpx;
+  line-height: 1.6; 
+}
+
+.page-body {
+  padding: 20rpx 0;
+}
+
+
+/* pages/seller/index.wxss */
+/*---start of common wxss---*/
+.textC, .boxC, .imageC, .iconC, .wrapperC{
+position: absolute;
+top: 0;
+left: 0;
+word-break: break-all;
+text-align: center;
+display: flex;
+align-items:center;
+box-sizing:border-box;
+transform-origin: 0% 0%;
+-webkit-transform-origin: 0% 0%;
+-webkit-font-smoothing: antialiased;
+}
+
+.imageC{
+overflow: hidden;
+}
+
+.imageC image{
+position: absolute;
+left: 0;
+top: 0;
+box-sizing: border-box;
+width: 100%;
+height: 100%;
+z-index: -1;
+}
+
+.textC{
+overflow: hidden;
+}
+
+.text-content{
+width: 100%;
+}
+
+.textC.hL{
+text-align: left;
+}
+/*---end of common wxss---*/

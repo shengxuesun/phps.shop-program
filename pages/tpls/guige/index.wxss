@@ -1,0 +1,18 @@
+/* pages/guige/index.wxss */
+.fl{float: left;}
+.fr{float: right}
+.clear{clear: both;}
+
+.guige{position:fixed;width:100%;bottom: 0rpx; background-color: #fff;border-top: 1px solid #e0e0e0}
+.gui-pro{padding: 45rpx 20rpx;width: 100%;box-sizing: border-box;border-bottom: solid 2rpx #e0e0e0;}
+.gui-pro-p{display: inline-block;border: solid 2rpx #e0e0e0; padding: 5rpx;border-radius:10rpx; margin-right: 20rpx;position:absolute;top:-40rpx;background-color: #fff}
+.gui-pro-p image{width: 180rpx;height: 180rpx;}
+.gui-pro-m{display: inline-block;padding-left: 210rpx;}
+.gui-pro-m-t{color: #ea0000;font-size: 36rpx}
+.gui-pro-m-b{font-size: 28rpx;}
+.gui-kuan{padding: 30rpx 20rpx;margin-bottom: 140rpx;width: 100%}
+.gui-kuan-li{
+  display: inline-block;background-color: #f0f0f0;margin:20rpx 40rpx 10rpx 0rpx;
+  padding: 5rpx 30rpx;border-radius: 10rpx;font-size: 28rpx;} 
+.red_select{background: #ea0000;color:#fff}
+.guige-but{border-radius: 0rpx;}

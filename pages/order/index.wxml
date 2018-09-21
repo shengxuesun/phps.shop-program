@@ -1,0 +1,82 @@
+<import src="../tpls/pay/index.wxml"/>
+
+<view>
+  <view>
+    <view class='addressbox' wx:if="{{address == null}}" bindtap='address'>
+      新增地址
+    </view>
+
+    <view class='addressbox1' wx:else bindtap='jumpaddressall'>
+      <view><text decode='true'>收件人：{{address.name}}&emsp;&emsp;电话：{{address.mobile}}</text></view> 
+      <view><text decode='true'>
+       地址：{{address.province}}{{address.city}}{{address.county}}{{address.detail}}
+      </text></view> 
+      <view class="right_ico">></view>
+    </view>
+  </view>  
+  <view class='H10'></view>
+  <!-- <view class="name" bindtap='seller' data-id="{{OrderData.shop_id}}">
+    <view class='s-n fl'>          
+      <image src="../../../imgs/shop.png"  />
+    </view>  
+    <view class='s-n fl'>          
+      <text>{{OrderData.shop_name}}</text>
+    </view> 
+    <view class='clear'></view>
+  </view> -->
+  <view class='list-product'  bindtap='detail' data-id="{{OrderData.goods_id}}" >
+    <view class='list-img fl' wx:if="{{sku_id != null}}">
+      <image src="{{OrderData['sku'][sku_id]['imgs']['url']}}" />
+    </view>
+    <view wx:else class='list-img fl'>
+      <image src="{{OrderData['imgs']['url']}}" />
+    </view>
+    <view class='list-text fr'>
+      <view class='text-n'>{{OrderData.goods_name}}</view>
+      <view class='text-s' wx:if="{{sku_id != ''}}">规格：{{OrderData['sku'][sku_id]['sku_name']}}</view>
+      <view class='text-a' >￥{{price}}/件</view>
+    </view>
+    <view class='clear'></view>
+  </view>
+  <view class='num'>
+    <view class='fl' bindtap='ask'>数量</view>
+    <view class='fr'>
+      <view class="stepper">
+        <!-- 减号 -->
+        <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+        <!-- 数值 -->
+        <input type="number" bindchange="bindManual" value="{{num}}" />
+        <!-- 加号 -->
+        <text class="normal" bindtap="bindPlus">+</text>
+      </view>
+    </view>
+    <view class='clear'></view>
+  </view>
+  <view class='H10'></view>
+  <view class='pay'>
+    <view class='weixin' >
+       微信支付
+      <text >推荐</text>
+    </view>  
+  </view>
+  
+  <view class="paymoney">
+  
+    <view class="pay-btn fr" wx:if="{{item_id > 0}}" bindtap='ct_pay'>立即支付</view>
+    <view class="pay-btn fr" wx:else bindtap='pay'>立即支付</view>
+    <view class="money fr">实付款
+
+      <text class="total" >￥{{num * price}}</text>    
+      <text decode="{{true}}">&emsp;运费&nbsp;{{OrderData.shipping_fee}}</text>
+    </view>
+    
+    <view class='clear'></view>
+  </view>
+
+  <template is="pay" data="{{flag2}}" />
+
+</view>
+
+
+
+

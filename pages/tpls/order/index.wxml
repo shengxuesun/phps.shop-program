@@ -1,0 +1,41 @@
+<!--订单信息-->
+<template name="order"  >
+    <view class='or-lis'>
+      <view class='or-s'   >
+        <view class='s-n fl' bindtap='seller' data-cid='{{item.item.shop_id}}'>          
+          <image src="../../../imgs/shop.png"  />
+        </view>  
+        <view class='s-n fl' bindtap='seller' data-cid='{{item.item.shop_id}}'>          
+          <!-- <text>{{item.item['shop_name']}}</text> -->
+           <text>官方店铺</text>
+        </view> 
+        <view class='s-s fr' >
+          <text wx:if="{{item.pay_status == 0}}">待支付</text>
+          <text wx:if="{{item.pay_status > 0}}" class="white">已支付</text>
+        </view>
+      <view class='clear'></view>
+      </view>
+      <view class='or-p' bindtap='order_detail' data-id='{{item.order_id}}'>
+        <view class='p-01'><image src="{{item.imgs}}" /></view>
+        <view class='p-02'>
+          <view class='p-02-2'>{{item.goods_name}}</view>
+          <view class="goods_sku">规格：{{item.sku_name}}</view>
+          <view class='p-02-1'>单价：{{item.price}}</view>
+        </view>
+        <view class='p-03'>
+          {{item.item.item_people}}人团
+          <view class='p-02-1'>×{{item.num}}</view>
+        </view> 
+      </view>
+      <view class='or-pay'>运费:{{item.shipping_money}}
+        <text decode='true'>&emsp;实付：¥{{item.order_money}}&emsp;</text>
+      </view>
+      <view class='or-btn'>  
+        <view class="or-btn2 fr" bindtap='order' data-id='{{item.order_id}}' wx:if="{{item.pay_status == 0}}">去支付</view>
+        <view class="or-btn1 fr" bindtap='order_detail' data-id='{{item.order_id}}'>订单详情</view>
+        <view class='clear'></view> 
+      </view>
+      <view class='H10'></view>
+    </view> 
+
+</template>

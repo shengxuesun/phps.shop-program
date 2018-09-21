@@ -1,0 +1,36 @@
+<!--pages/search/index.wxml-->
+<import src="../tpls/homep/homep.wxml"/>
+
+<view class="top" >
+   <view class="search" >
+   <image src="../../imgs/diy/search.png"  />
+   <input  bindblur="blur" type='text' name='search'  placeholder="搜索商品名称" value=""  />
+  </view> 
+</view>
+<view class="H40"></view>
+<!-- <view class='sear_history'>历史搜索
+  <view class='fl'></view>
+  <view class='fr'><icon type="clear" size="15"/></view>
+  <view class='clear'></view>
+</view> -->
+<view hidden='true'><image src="../../imgs/141312.png"  /> </view>
+
+<template wx:if="{{HomePArr != null}}" is="homep" data="{{HomePArr}}"/>
+<view wx:else>
+  <view class='newtitle'>
+    <view class='newtitle-t'>推荐商品</view> 
+  </view>
+  <view class='mui-content'>   
+      <view class='mui-row'>
+        <block wx:for="{{bannerArr}}">
+        <view class='row'>  
+            <view class='row-1' bindtap='detail' data-id='{{item.goods_id}}'>
+            <image src="{{item['imgs']['url']}}" />
+            <view class='row-title'>{{item.goods_name}}</view>
+            <view class='row-1-3'><text>¥{{item.price}}</text> </view>
+            </view>   
+        </view> 
+        </block>
+      </view>
+  </view>
+</view>

@@ -1,0 +1,67 @@
+{
+  "pages":[
+    
+    "pages/home/home",
+    "pages/user/index",
+    "pages/user/set/set",
+    "pages/user/setnews/setnews",
+    "pages/user/collect/collect",
+    "pages/user/history/history",
+    "pages/user/mobile/mobile",
+    "pages/search/index",
+    "pages/thene/index",
+    "pages/address/index",
+    "pages/address/addressall/addressall",
+    "pages/address/revise/revise",
+    "pages/detail/index",
+    "pages/order/index",
+    "pages/order/order_details/order_details",
+    "pages/order/logistics/logistics",
+    "pages/seller/index",
+    "pages/orderall/index",
+    "pages/category/index",
+    "pages/pay/pay"
+    
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarTitleText": "textarea",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "imgs/toolbar/home.png",
+        "selectedIconPath": "imgs/toolbar/home@selected.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/thene/index",
+        "iconPath": "imgs/toolbar/category.png",
+        "selectedIconPath": "imgs/toolbar/category@selected.png",
+        "text": "新品"
+      },
+      {
+        "pagePath": "pages/search/index",
+        "iconPath": "imgs/toolbar/cart.png",
+        "selectedIconPath": "imgs/toolbar/cart@selected.png",
+        "text": "搜索"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "imgs/toolbar/my.png",
+        "selectedIconPath": "imgs/toolbar/my@selected.png",
+        "text": "个人中心"
+      }
+    ],
+    "borderStyle": "white",
+    "selectedColor": "#51870F",
+    "color": "#333333",
+    "backgroundColor": "#f0f0f0",
+    "position": "bottom"
+  } 
+}

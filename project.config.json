@@ -1,0 +1,125 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.5",
+	"appid": "wx40342b8063b72fc1",
+	"projectname": "pintuan",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "全部地址",
+					"pathName": "pages/address/addressall/addressall",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "新增地址",
+					"pathName": "pages/address/index",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "商品",
+					"pathName": "pages/detail/index",
+					"query": "id=1"
+				},
+				{
+					"id": -1,
+					"name": "收藏",
+					"pathName": "pages/user/collect/collect",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "下单",
+					"pathName": "pages/order/index",
+					"query": "id=6&sku_id=0"
+				},
+				{
+					"id": -1,
+					"name": "所有地址",
+					"pathName": "pages/address/addressall/addressall",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "所有订单",
+					"pathName": "pages/orderall/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "用户",
+					"pathName": "pages/user/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/user/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "绑定手机",
+					"pathName": "pages/user/mobile/mobile",
+					"query": ""
+				},
+				{
+					"id": 11,
+					"name": "店铺",
+					"pathName": "pages/seller/index",
+					"query": "id=2"
+				},
+				{
+					"id": -1,
+					"name": "支付",
+					"pathName": "pages/order/index",
+					"query": ""
+				},
+				{
+					"id": 12,
+					"name": "分类",
+					"pathName": "pages/category/index",
+					"query": "id=1"
+				},
+				{
+					"id": -1,
+					"name": "分类",
+					"pathName": "pages/seller/index",
+					"query": "id=1"
+				}
+			]
+		}
+	}
+}

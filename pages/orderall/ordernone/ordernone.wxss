@@ -1,0 +1,12 @@
+/* pages/orderall/ordernone.wxss */
+.or-search{width: 100%;background-color: #f0f0f0;height: 38px;line-height: 40px;padding: 5px 10px;box-sizing: border-box}
+.or-search input{background-color: #fff;text-align: center;border-radius:8px;}
+.or-fy{width:100%;height: 40px;line-height: 40px;}
+.fy{display:inline;width: 20%;text-align: center;float: left;}
+.fy text{border-bottom: solid #e02e24 2px;padding-bottom: 20rpx;color:#e02e24 }
+.ordernone{background-color: #f0f0f0;height: 800rpx;}
+.ordernone-a{padding: 20rpx;font-size: 24rpx;color: #7b7b7b;}
+.ordernone-a image{height: 20rpx;width: 20rpx;padding-right: 20rpx;}
+.ordernone-b{text-align: center;padding-top: 100rpx;font-size: 36rpx;}
+.ordernone-b image{height: 200rpx;width: 200rpx;}
+.ordernone-b text{font-size: 24rpx;color: #adadad}

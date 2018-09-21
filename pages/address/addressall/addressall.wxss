@@ -1,0 +1,17 @@
+/* pages/address/addressall.wxss */
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both;}
+.H20{height: 20rpx;background-color: #f0f0f0;}
+page{background-color: #f0f0f0;}
+
+.addall{background-color: #ffffff;padding: 20rpx;line-height: 60rpx;}
+.addall-02{border-bottom: solid 2rpx #f0f0f0;margin-bottom: 20rpx;}
+.addall-03-r{padding-left: 20rpx;}
+.addall-03-r text{padding-left: 10rpx;line-height: 20rpx;}
+.H50{height: 100rpx;}
+.btn{padding: 0px 10px;}
+.sel_img{
+  width:28px;height:28px;
+  vertical-align: middle;
+}

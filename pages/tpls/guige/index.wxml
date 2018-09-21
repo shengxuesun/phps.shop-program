@@ -1,0 +1,40 @@
+<!--商品规格-->
+<template name="guige"  >
+  <view class='guige' hidden="{{flag}}">
+    <view class='gui-pro'>
+      <view class='gui-pro-p fl' wx:if="{{sku_index == null}}">
+        <image src="{{goods.imgs.url}}"/>
+      </view>
+      <view class='gui-pro-p fl' wx:else>
+        <image src="{{goods.sku[sku_index].imgs.url}}"/>
+      </view>
+
+      <view class='gui-pro-m fl'>
+        <view class='gui-pro-m-t' wx:if="{{sku_index == null}}">¥</view>
+        <view class='gui-pro-m-t' wx:else>¥{{goods.sku[sku_index].price}}</view>
+         
+        <view class='gui-pro-m-' wx:if="{{sku_index == null}}">请选择规格</view>
+        <view class='gui-pro-m-' wx:else>{{goods.sku[sku_index].sku_name}}</view>
+      </view>
+
+      <!-- 关闭按钮 -->
+      <view class='fr'><icon  bindtap="hide" type="clear" /></view>
+
+      <view class='clear'></view>
+    </view>
+    <view class='gui-kuan'>
+      <view>选择规格：</view>
+      <block wx:for="{{goods.sku}}" >
+        <view  wx:if="{{sku_index == index}}"  class='gui-kuan-li red_select'>{{item.sku_name}}</view> 
+        <view  wx:else class='gui-kuan-li' bindtap='sku_select' data-id="{{index}}">{{item.sku_name}}</view> 
+      </block>  
+    </view> 
+    
+     <button class='guige-but' type="warn"  wx:if="{{cantuan > 0}}" bindtap="ct_order" data-id="{{goods.goods_id}}"
+     data-sid="{{sku_index}}" data-tid="{{cantuan}}"> 确定 </button>
+    <button class='guige-but' type="warn" wx:else bindtap="order" data-id="{{goods.goods_id}}"
+     data-sid="{{sku_index}}"> 确定 </button>
+    
+  </view>
+
+</template>

@@ -1,0 +1,20 @@
+/* pages/order/logistics.wxss */
+page{font-size: 28rpx;}
+.H10{height: 20rpx;background-color: #f0f0f0;}
+
+.log-pro{padding: 20rpx;border-bottom: solid 2rpx #f0f0f0;}
+.log-pro-l{display: inline-block;line-height: 20px;}
+.log-pro-l image{height: 120rpx;width: 120rpx;padding-right: 20rpx;}
+.log-pro-l-u text{color: #02c874}
+.log-pro-l-m{color: #adadad;}
+.log-pro-l-m text{color: #46a3ff;}
+.log-address{padding: 30rpx 20rpx;}
+.log-address-l{display: inline-block;
+              text-align:left;margin: auto;width:10%;box-sizing: border-box; }
+.log-address-l image{height: 40rpx;width: 40rpx;}
+.log-address-r{display: inline-block;width: 90%;color: #adadad;line-height: 30rpx;}
+.log-title{height: 80rpx;padding: 0rpx 20rpx;line-height: 80rpx;border-bottom: solid 2rpx #f0f0f0;font-size: 32rpx;}
+.log-message{color: #adadad;padding: 40rpx 0rpx 0rpx 20rpx;box-sizing: border-box;line-height: 50rpx;}
+.log-message-up{color: #02c874;border-bottom: solid 2rpx #f0f0f0;padding-bottom: 30rpx;width: 70%}
+.log-message-tell{color: #46a3ff;}
+.log-message-zz{padding: 20rpx 0rpx;border-bottom: solid 2rpx #f0f0f0;width: 70%;box-sizing: border-box;}

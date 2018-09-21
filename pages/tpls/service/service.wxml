@@ -1,0 +1,45 @@
+<template name="service"  >
+  <view class='service' hidden="{{flag1}}">
+    <view class='service-title'>
+      服务说明
+      <icon bindtap="service_hide" type="clear" />
+
+      <view class='clear'></view>
+    </view>
+    <view class='service-mess'>
+      <view class=''>
+        <view class='service-mess-a'><icon type="success" size="15" color="red"/></view>
+        <view class='service-mess-b'>
+          <view class='mess-b-c'>全程包邮</view>
+          <view class='mess-b-d'>所有商品均无条件包邮</view>
+        </view>
+        <view class='clear'> </view>
+      </view>
+      <view class=''>
+        <view class='service-mess-a'><icon type="success" size="15" color="red"/></view>
+        <view class='service-mess-b'>
+          <view class='mess-b-c'>7天退换</view>
+          <view class='mess-b-d'>商家承诺7天无理由退换货</view>
+        </view>
+        <view class='clear'> </view>
+      </view>
+      <view class=''>
+        <view class='service-mess-a '><icon type="success" size="15" color="red"/></view>
+        <view class='service-mess-b '>
+          <view class='mess-b-c'>48小时发货</view>
+          <view class='mess-b-d'>若超时未发货，消费者将会收到3元无门槛代金券</view>
+        </view>
+        <view class='clear'> </view>
+      </view>
+      
+      <view class=''>
+        <view class='service-mess-a'><icon type="success" size="15" color="red"/></view>
+        <view class='service-mess-b'>
+          <view class='mess-b-c'>假一赔十</view>
+          <view class='mess-b-d'>若收到商品是假冒品牌，可获得十倍赔偿</view>
+        </view>
+        <view class='clear'> </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,64 @@
+<import src="../tpls/service/service.wxml"/>
+<import src="../tpls/guige/index.wxml"/>
+<import src="../tpls/goods/pintuan.wxml"/>
+<import src="../tpls/goods/button.wxml"/>
+<view>
+  <view>
+    <image src="{{goods.imgs.url}}" style="width:100%;" />
+  </view>
+  
+  <view class='g'>
+    <view class='g-price'>
+      <view class='fl'><text>¥{{goods.price}}</text>￥{{goods.market_price}}</view>
+      <view class='fr'>销量：{{goods.sales}}件 · {{goods.people}}人团</view>
+      <view class='clear'></view>
+    </view>
+    <view class='clear'></view>
+    <view >
+      <view class='fl g-name'>{{goods.goods_name}}</view>
+      <view class='fr g-share' >
+       <button open-type="share">
+        <image src="../../imgs/share.png" />
+        <view>分享</view>
+        </button>
+      </view>
+      <view class='fr g-dian'><image src="../../imgs/....png" />
+      </view>
+      <view class='clear'></view>
+    </view>
+    
+  </view>
+  <view class='fuwu' bindtap="service">
+    <view class='fuwu-l'><icon type="success" size="10" color="#fff"/> 全场包邮</view>
+    <view class='fuwu-l'><icon type="success" size="10" color="#fff"/> 7天退换</view>
+    <view class='fuwu-l'><icon type="success" size="10" color="#fff"/> 48小时发货</view>
+    <view class='fuwu-l'><icon type="success" size="10" color="#fff"/> 假一赔十 </view>
+    <text>></text>
+  </view>
+
+<template is="pintuan"  data="{{CanTArr,guige}}" /> <!-- 待拼团的团单 -->
+
+  <view class='H10'></view>
+  <view class='mall-infor'>
+    <!-- <view class='mall-logo fl'><image src="../../imgs/shop.png" /></view>
+    <view class='mall-name fl'>
+      <text decode='true'>&emsp;{{goods.shop_name}}</text>
+    </view>
+    <view class='mall-btn fr' bindtap='seller' data-id='{{goods.shop_id}}'> 进店逛逛 </view>
+    <view class='clear'></view>-->
+    <view class="grey">演示程序请勿购买，商品图片来源于京东</view>
+    <view >{{goods.content}}</view>
+    <view class='mall-p'>
+      <block wx:for="{{goods.img_id_array}}">
+        <image src="{{item.url}}" style="width:100%;height:880rpx;"/>
+      </block>       
+    </view>
+    <view class="H40"></view>
+  </view> 
+
+  
+<template is="button"  data="{{goods,guige,Favgood}}" />  <!-- 底部按钮 -->
+<template is="guige"  data="{{goods,flag,cantuan,sku_index}}" />  <!-- 规格模板 -->
+<template is="service"  data="{{flag1}}" /> <!-- 服务说明 -->
+
+</view>

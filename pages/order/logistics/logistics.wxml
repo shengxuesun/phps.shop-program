@@ -1,0 +1,35 @@
+<!--pages/order/logistics.wxml-->
+<view>
+  <view class='log-pro'>
+    <view class='log-pro-l'><image src="../../../imgs/pr1.jpg" /></view>
+    <view class='log-pro-l'>
+      <view class='log-pro-l-u'>物流公司：<text>天天</text></view>
+      <view class='log-pro-l-m'>运单编号：1245465678885</view>
+      <view class='log-pro-l-m'>物流电话：<text>1243456</text></view>
+    </view>
+  </view>
+  <view class='log-address'>
+    <view class='log-address-l'><image src="../../../imgs/super_spike.png"  /></view>
+    <view class='log-address-r'>配送至：黔西南布衣苗族自治州兴义市局山区衣苗族自治州兴义市局</view>
+  </view>
+  <view class='H10'></view>
+  <view class='log-title'>订单跟踪</view>
+  <view class='log-message'>
+    
+    <view class='log-message-up'>
+      <view>少看点就萨克三季度开始啦</view>
+      <view class='log-message-tell'>12355226454</view>
+      <view>2018-09-89 15:30:30</view>
+    </view>
+    <view class='log-message-zz'>
+      <view>少看点就萨克三季度开始啦</view>
+      
+      <view>2018-09-89 15:30:30</view>
+    </view>
+    <view class='log-message-zz'>
+      <view>少看点就萨克三季度开始啦</view>
+      
+      <view>2018-09-89 15:30:30</view>
+    </view>
+  </view>
+</view>

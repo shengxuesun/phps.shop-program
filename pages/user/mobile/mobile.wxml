@@ -1,0 +1,44 @@
+<!--pages/user/mobile/mobile.wxml-->
+<view>
+
+  <form>
+    <view class='mobile'>
+      <view class='mobile-01'>
+        <view class='mobile-01-name fl'>手机号<text>★</text></view>
+        <view class='section fl'>
+          <input  placeholder="请输入手机号" name="name" auto-focus/> 
+        </view>
+        <view class='clear'></view>
+      </view>
+      <view class='mobile-01'>
+        <view class='mobile-01-name1 fl'>验证码<text>★</text></view>
+        <view class='section1 fl'>
+          <input  placeholder="5位验证码" name="name" auto-focus/> 
+        </view>
+        <view class='mobile-01-02 fr'>
+          获取验证码
+        </view>
+        <view class='clear'></view>
+      </view>
+      <view class='mobile-01'>
+        <view class='mobile-01-name fl'>登录密码<text>★</text></view>
+        <view class='section fl'>
+          <input  placeholder="请输入您的登录密码" name="name" auto-focus/> 
+        </view>
+        <view class='clear'></view>
+      </view>
+      <view class='mobile-01'>
+        <view class='mobile-01-name fl'>确认密码<text>★</text></view>
+        <view class='section fl'>
+          <input  placeholder="请输入确认密码" name="name" auto-focus/> 
+        </view>
+       
+        <view class='clear'></view>
+      </view>
+    </view>
+    <view class='addbutton'>
+      <view class='btn'><button type="warn" formType="submit"> 立即绑定 </button></view>
+      
+    </view>
+  </form>
+</view>
